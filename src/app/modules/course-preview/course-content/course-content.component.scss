@@ -1,0 +1,10 @@
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '';
+}
+.spacer {
+  flex: 1;
+}

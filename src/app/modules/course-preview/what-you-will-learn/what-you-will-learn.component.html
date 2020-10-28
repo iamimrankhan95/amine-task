@@ -1,0 +1,14 @@
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        What you will learn
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <ul>
+      <li class="" *ngFor="let learning of learnings" >{{learning.name}}</li>
+    </ul>
+  </mat-expansion-panel>
+</mat-accordion>

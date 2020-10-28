@@ -1,0 +1,48 @@
+.backgroung-black {
+  background-image: url("../../../assets/img/Rectangle\ 300background.png");
+  height: 400px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.course-title {
+  // font-family: Avenir;
+  font-style: normal;
+  // font-weight: 900;
+  // font-size: 48px;
+  line-height: 120%;
+  /* or 58px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.5px;
+
+  /* White */
+
+  color: #FFFFFF;
+}
+
+.course-desc {
+  // font-family: Avenir;
+  font-style: normal;
+  // font-weight: 500;
+  font-size: 14px;
+  line-height: 145%;
+  /* or 26px */
+
+  letter-spacing: 0.15px;
+
+  /* Gray-1 */
+
+  color: #ebecee;
+}
+.course-prev{
+  width: 400px;
+  height: 279px;
+}
+
+.checked {
+  color: orange;
+}
