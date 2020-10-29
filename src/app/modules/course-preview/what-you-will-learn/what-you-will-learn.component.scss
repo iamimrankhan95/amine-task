@@ -1,26 +1,38 @@
-.what-you-will-learn--what-will-you-learn--mnJ5T{
+.what-you-will-learn--what-will-you-learn--mnJ5T {
   background-color: #fbfbf8;
-    border: 1px solid #dcdacb;
-    border-radius: 4px;
-    padding: 2.4rem 0;
+  border: 1px solid #dcdacb;
+  border-radius: 4px;
+  padding: 2.4rem 0;
+}
+.mat-expansion-panel-header.mat-expanded {
+  height: 50px;
+}
+
+.mat-expansion-panel-header {
+  border: 1px solid #d9d9d9;
+  border-radius: 0%;
+}
+.expansion-body-padding{
+  padding-top: 20px;
 }
 
 ul {
-  list-style: none;
+  padding: 0;
+  list-style-type: none;
 }
 ul {
   columns: 2;
 }
 
 ul li:before {
-  content: '✓ ';
+  // content: '../../../../assets/img/check_24px.png ';
 }
 
 .panel-heading {
   position: relative;
 }
 .panel-heading[data-toggle="collapse"]:after {
-  font-family: 'Glyphicons Halflings';
+  font-family: "Glyphicons Halflings";
   content: "\e072"; /* "play" icon */
   position: absolute;
   color: #b0c5d8;
@@ -31,16 +43,16 @@ ul li:before {
 
   /* rotate "play" icon from > (right arrow) to down arrow */
   -webkit-transform: rotate(-90deg);
-  -moz-transform:    rotate(-90deg);
-  -ms-transform:     rotate(-90deg);
-  -o-transform:      rotate(-90deg);
-  transform:         rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .panel-heading[data-toggle="collapse"].collapsed:after {
   /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
   -webkit-transform: rotate(90deg);
-  -moz-transform:    rotate(90deg);
-  -ms-transform:     rotate(90deg);
-  -o-transform:      rotate(90deg);
-  transform:         rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }

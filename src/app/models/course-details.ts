@@ -43,4 +43,10 @@ export class Course {
   name: string;
   avgRate: number;
   about: string;
+  length: string;
+  ratingNo: number;
+  author: string;
+  lastUpdatedOn: string;
+  language: string;
+  subtitle: string;
 }

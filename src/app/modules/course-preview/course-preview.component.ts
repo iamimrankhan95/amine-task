@@ -48,19 +48,37 @@ export class CoursePreviewComponent implements OnInit {
       image: 'assets/img/Rectangle 302.png',
       name: 'An Entire MBA in 1 Course:Award Winning Business School Prof',
       avgRate: 3,
-      about: ''
+      about: '',
+      author: 'asd',
+      language: 'asdf',
+      lastUpdatedOn: 'asdf',
+      length: 'asdf',
+      ratingNo: 2,
+      subtitle: 'asdf'
     }, {
       image: 'assets/img/image 21.png',
       name: 'Angelina',
       avgRate: 4,
-      about: ''
+      about: '',
+      author: 'asd',
+      language: 'asdf',
+      lastUpdatedOn: 'asdf',
+      length: 'asdf',
+      ratingNo: 2,
+      subtitle: 'asdf'
     }];
-    this.courseDetails.learnings = [{ name: 'asdf' }, { name: 'asddfg' }, { name: 'asddfg' }, { name: 'asddfg' }];
+    this.courseDetails.learnings = [{ name: 'asdf' }, { name: 'asddfg' }, { name: 'asddfg' }, { name: 'asddfg' },];
     this.courseDetails.courseSummary = {
       avgRate: 4,
       image: '',
       name: 'Begining Project Managment: Project Managment Level One',
-      about: 'Everything you need to know about starting, Growing and Perfecting youtube channel'
+      about: 'Everything you need to know about starting, Growing and Perfecting youtube channel',
+      author: 'Bryan Guerra',
+      language: 'asdf',
+      lastUpdatedOn: 'Last updated 4/2020',
+      length: '3h 21m',
+      ratingNo: 180,
+      subtitle: 'English [Auto-generated]'
     }
   }
 

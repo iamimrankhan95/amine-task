@@ -2,13 +2,15 @@
   <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        What you will learn
+        <span style="font-weight: 500">What you will learn</span>
       </mat-panel-title>
       <mat-panel-description>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <ul>
-      <li class="" *ngFor="let learning of learnings" >{{learning.name}}</li>
-    </ul>
+    <div class="expansion-body-padding">
+      <ul>
+        <li class="" *ngFor="let learning of learnings" ><i class="fas fa-check"></i> {{learning.name}}</li>
+      </ul>
+    </div>
   </mat-expansion-panel>
 </mat-accordion>
