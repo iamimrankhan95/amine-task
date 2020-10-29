@@ -1,3 +1,4 @@
+import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
 import { MaterialModule } from './material.module';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    DemoNgZorroAntdModule
   ],
   providers: [],
   bootstrap: [AppComponent]

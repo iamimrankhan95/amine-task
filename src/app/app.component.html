@@ -1,5 +1,5 @@
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<!-- <div class="toolbar" role="banner">
   <img alt="Angular Logo"
     src="../assets/img/durham-university-2019 1logo.png" width="110" height="32" style="padding-left: 5px;"/>
   <div class="spacer"></div>
@@ -11,6 +11,34 @@
     <span>Join Now</span>
   </button>
 </div>
-<div class="containerd">
+<div class="containerx">
   <router-outlet></router-outlet>
-</div>
+</div> -->
+<nz-layout class="app-layout">
+  <nz-layout>
+    <!-- <nz-header>
+      <div class="app-header">
+        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+          <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+        </span>
+      </div>
+    </nz-header> -->
+    <div class="toolbar" role="banner">
+      <img alt="Angular Logo"
+        src="../assets/img/durham-university-2019 1logo.png" width="110" height="32" style="padding-left: 5px;"/>
+      <div class="spacer"></div>
+
+      <button type="button" id="cancel-save" class="btn btn-secondary">
+        <span>Log in</span>
+      </button> &nbsp;
+      <button type="submit" id="save-entity" class="btn btn-success">
+        <span>Join Now</span>
+      </button>
+    </div>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

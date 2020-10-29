@@ -1,10 +1,10 @@
 .backgroung-black {
   background-image: url("../../../assets/img/Rectangle\ 300background.png");
   height: 400px;
-
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100vw;
 }
 
 .course-title {
@@ -21,7 +21,7 @@
 
   /* White */
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .course-desc {
@@ -38,11 +38,15 @@
 
   color: #ebecee;
 }
-.course-prev{
+.course-prev {
   width: 400px;
   height: 279px;
 }
 
 .checked {
   color: orange;
+}
+
+.containerrx{
+  width: 75%;
 }

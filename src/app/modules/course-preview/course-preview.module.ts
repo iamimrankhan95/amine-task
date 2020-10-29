@@ -1,3 +1,4 @@
+import { DemoNgZorroAntdModule } from './../../ng-zorro-antd.module';
 import { MaterialModule } from './../../material.module';
 import { CoursePreviewRoutingModule } from './course-preview-routing.module';
 import { WhatYouWillLearnComponent } from './what-you-will-learn/what-you-will-learn.component';
@@ -16,7 +17,8 @@ import { CoursePreviewComponent } from './course-preview.component';
   imports: [
     CommonModule,
     CoursePreviewRoutingModule,
-    MaterialModule
+    MaterialModule,
+    DemoNgZorroAntdModule
   ],
   declarations: [
     CoursePreviewComponent,
