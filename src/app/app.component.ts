@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NzButtonSize } from 'ng-zorro-antd/button';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'amine-task';
   isCollapsed = false;
+  size: NzButtonSize = 'large';
 }

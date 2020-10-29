@@ -1,20 +1,17 @@
 <mat-accordion>
-  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+  <mat-expansion-panel class="mat-elevation-z0"  (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <span style="font-weight: 500">Requirements</span>
+        <span class="mat-panel-title">Requirements</span>
       </mat-panel-title>
       <mat-panel-description>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <div class="expansion-body-padding">
+    <div class="expansion-body-padding ">
       <ul>
         <li class="" *ngFor="let requirement of requirements">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="">
-            <label class="form-check-label" for="exampleRadios1">
-              {{requirement.name}}
-            </label>
+          <div class="pad-z-l">
+            <label class="pad-z-l" nz-radio nzValue="A">{{requirement.name}}</label>
           </div>
         </li>
       </ul>

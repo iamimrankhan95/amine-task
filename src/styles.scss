@@ -84,3 +84,52 @@ body {
   margin-left: 0px;
   margin-right: 0px;
 }
+
+.pad-z-r {
+  padding-right: 0px;
+}
+
+.pad-z-l {
+  padding-left: 0px;
+}
+.pad-ten-r {
+  padding-right: 10px;
+}
+
+.pad-ten-l {
+  padding-left: 10px;
+}
+.pad-twenty-l {
+  padding-left: 20px;
+}
+.pad-twenty-r {
+  padding-left: 20px;
+}
+.collapse-body-text {
+  color: #121212;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+  opacity: 0.9;
+}
+[nz-radio] {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+}
+input {
+  width: 100px;
+  margin-left: 10px;
+}
+.mat-panel-title {
+  font-weight: 405;
+  font-size: 19px;
+  line-height: 27px;
+
+  /* Black */
+
+  color: #121212;
+}
+
+.not-rated-star {
+  opacity: 0.5;
+}

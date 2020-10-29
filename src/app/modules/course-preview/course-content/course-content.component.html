@@ -1,44 +1,47 @@
 <mat-accordion>
-  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+  <mat-expansion-panel class="mat-elevation-z0" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Course content
+        <span class="mat-panel-title">Course content</span>
       </mat-panel-title>
       <mat-panel-description>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <div class="accordion" id="accordionExample" *ngFor="let content of contents">
-      <div class="card-headerx" id="headingOne">
-        <div class="row">
-          <div class="col-md-8">
-            <h2 class="mb-0">
-              <span (click)="changeIcon()" class="btn-block text-left" data-toggle="collapse" data-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                <img alt="" [src]="isOpen? 'assets/img/minimize_24px.png' : 'assets/img/add_24px.png'" />
-                {{content.name}}
-              </span>
-            </h2>
-          </div>
-          <div class="col-md-4" style="text-align: right;">
-            <h2 class="mb-0" style="text-align: right;">
-              <span class="btn-block text-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                aria-controls="collapseOne">
-                {{content.length}}
-              </span>
-            </h2>
+    <div class="expansion-body-padding">
+      <div class="accordion" id="accordionExample" *ngFor="let content of contents">
+        <div class="card-headerx" id="headingOne">
+          <div class="row">
+            <div class="col-md-8">
+              <h2 class="mb-0">
+                <span class="content-headerx btn-block text-left" (click)="changeIcon()" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <img class="pad-ten-r" alt=""
+                    [src]="isOpen? 'assets/img/minimize_24px.png' : 'assets/img/add_24px.png'" />
+                  {{  content.name}}
+                </span>
+              </h2>
+            </div>
+            <div class="col-md-4" style="text-align: right;">
+              <h2 class="mb-0" style="text-align: right;">
+                <span class="btn-block text-right content-headerx-number" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="">
+                  {{content.length}}
+                </span>
+              </h2>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample"
-        *ngFor="let content of content.contents">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-              {{content.name}}
-            </div>
-            <div class="col-md-3 offset-3" style="text-align: right;">
-              {{content.length}}
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample"
+          *ngFor="let content of content.contents">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6 sub-content-header">
+                <img class="pad-ten-r" alt="" [src]="'../../../../assets/img/play_circle_filled_white_24px.png'" />{{content.name}}
+              </div>
+              <div class=" col-md-3 offset-3 sub-content-headerx-number">
+                {{content.length}}
+              </div>
             </div>
           </div>
         </div>

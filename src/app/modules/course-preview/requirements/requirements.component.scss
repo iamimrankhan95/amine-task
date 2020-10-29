@@ -14,8 +14,11 @@ ul li:before {
   height: 50px;
 }
 
+.mat-expansion-panel{
+  border: 1px solid #EBECEE;
+}
 .mat-expansion-panel-header {
-  border: 1px solid #d9d9d9;
+  border: 1px solid #EBECEE;
   border-radius: 0%;
 }
 .expansion-body-padding{

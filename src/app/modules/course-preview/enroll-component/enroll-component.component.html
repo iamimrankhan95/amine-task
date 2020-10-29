@@ -1,5 +1,5 @@
-<div id="accordion">
-  <div class="card">
+<div id="accordionas">
+  <div class="card" style="border: 1px solid #EBECEE;">
     <div>
       <div nz-row>
         <div nz-col nzSpan="24">
@@ -7,25 +7,25 @@
         </div>
       </div>
       <div class="card-body">
-        <div class="row">
+        <div class="row mb-3">
           <div class="col-md-12">
-            <h1>{{enrollInfoes.price}}</h1>
+            <span class="dollar">₹{{enrollInfoes.price}}</span><span class="discount"> ₹4,800 85% off</span>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <button type="button" class="btn btn-success btn-block ">ENROLL NOW</button>
+            <button type="button" class="btn btn-success btn-block "><span class="enroll-button-text">enroll now</span></button>
           </div>
         </div>
         <div class="row mt-3">
           <div class="col-md-12">
-            <b>This course inclue:</b>
-            <div *ngFor="let include of enrollInfoes.includes"><i class="{{include.icon}}"></i>{{include.include}}</div>
+            <span class="this-course-includes">This course inclue:</span>
+            <div style="padding-top: 10px;" *ngFor="let include of enrollInfoes.includes"><i class="{{include.icon}}"></i>{{include.include}}</div>
           </div>
         </div>
-        <div class="row">
+        <div class="row  mt-5">
           <div class="col-md-12">
-            <button type="button" class="btn btn-light btn-block ">SHARE THIS COURSE</button>
+            <button type="button" class="btn btn-light btn-block "><span class="share-this-text">SHARE THIS COURSE</span></button>
           </div>
         </div>
       </div>

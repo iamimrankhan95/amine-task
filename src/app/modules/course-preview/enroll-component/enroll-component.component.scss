@@ -11,5 +11,81 @@ ul {
   list-style: none;
 }
 ul li:before {
-  content: '';
+  content: "";
+}
+
+.dollar {
+  // font-family: Avenir;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+
+  /* Base-Dark */
+
+  color: #020d20;
+}
+.discount {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.0015em;
+  text-decoration-line: line-through;
+
+  /* Gray */
+
+  color: #6e7077;
+}
+.enroll-button-text {
+  // font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
+
+.share-this-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+
+  /* Primary-blue */
+
+  color: #6f2568;
+}
+
+.this-course-includes {
+  // font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: 0.0015em;
+
+  /* Base-Dark */
+
+  color: #020d20;
+  margin-bottom: 10vw;
 }

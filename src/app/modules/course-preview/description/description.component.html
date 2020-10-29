@@ -1,13 +1,17 @@
 <mat-accordion>
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
+  <mat-expansion-panel class="mat-elevation-z0" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Description
+        <span class="mat-panel-title">Description</span>
       </mat-panel-title>
       <mat-panel-description>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>{{descriptions}}</p>
+    <div class="expansion-body-padding">
+      <p>{{descriptions}}</p>
+      <p>{{descriptions}}</p>
+      <p>{{descriptions}}</p>
+      <p style="letter-spacing: 0.02em;text-transform: uppercase; color: #6F2568;">show more...</p>
+    </div>
   </mat-expansion-panel>
 </mat-accordion>

@@ -1,17 +1,19 @@
 <mat-accordion>
-  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+  <mat-expansion-panel class="mat-elevation-z0"  (opened)="panelOpenState = true" (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Skill will be covered
+        <span class="mat-panel-title">Skill will be covered</span>
       </mat-panel-title>
       <mat-panel-description>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
+    <div class="expansion-body-padding">
+      <mat-chip-list  class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
       (cdkDropListDropped)="drop($event)">
-      <mat-chip class="example-box" cdkDrag *ngFor="let skill of coveredSkills">
+      <mat-chip class="example-box chips-custom" cdkDrag *ngFor="let skill of coveredSkills">
         {{skill.name}}
       </mat-chip>
     </mat-chip-list>
+    </div>
   </mat-expansion-panel>
 </mat-accordion>

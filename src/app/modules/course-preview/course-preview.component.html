@@ -5,21 +5,34 @@
         <h1 class="course-title">{{courseDetails.courseSummary.name}}</h1>
         <div nz-row>
           <div class="course-desc">
-            {{courseDetails.courseSummary.about}}
+            <span class="course-desc">{{courseDetails.courseSummary.about}}</span>
           </div>
         </div>
-        <div nz-row class="rating-info">
+        <div nz-row class="course-info-div">
           <div nz-col nzSpan="24">
-            <span *ngFor="let item of [].constructor(courseDetails.courseSummary.avgRate)"><img
-                src="../../../assets/img/star_purple500_24px.png" alt=""></span>
-            <span class="not-rated-star" *ngFor="let item of [].constructor(5-courseDetails.courseSummary.avgRate)"><img
-                src="../../../assets/img/star_purple500_24px.png" alt=""></span>
-            <span> {{courseDetails.courseSummary.avgRate}}</span><span> ( {{courseDetails.courseSummary.ratingNo}} ) |
-              {{courseDetails.courseSummary.length}}</span>
-            <div nz-row>
+            <div nz-row class="rating-info-div">
+              <span style="padding-right: 5px;">
+                <span *ngFor="let item of [].constructor(courseDetails.courseSummary.avgRate)"><img
+                    src="../../../assets/img/star_purple500_24px.png" alt=""></span>
+                <span class="not-rated-star"
+                  *ngFor="let item of [].constructor(5-courseDetails.courseSummary.avgRate)"><img
+                    src="../../../assets/img/star_purple500_24px.png" alt=""></span>
+              </span>
+              <span style="padding-right: 10px;">{{courseDetails.courseSummary.avgRate }}</span>
+              <span style="padding-right: 10px;"> ( {{courseDetails.courseSummary.ratingNo}}
+                ratings ) </span><span style="padding-right: 10px;">|</span>
+              <span style="padding-right: 10px;">{{courseDetails.courseSummary.length}}</span>
+            </div>
+            <div nz-row class="course-author-div">
               <div nz-col nzSpan="24">
-                <span> {{courseDetails.courseSummary.author}} | {{ courseDetails.courseSummary.lastUpdatedOn}} |
-                  {{ courseDetails.courseSummary.subtitle}}</span>
+                <span style="padding-right: 10px;"> {{courseDetails.courseSummary.author}} </span>
+                <span style="padding-right: 10px;">|</span><span
+                  style="padding-right: 10px;">{{ courseDetails.courseSummary.lastUpdatedOn}}
+                </span>
+                <span style="padding-right: 10px;"> <img src="../../../assets/img/chat_bubble_outline_24px.png"> </span>
+                <span style="padding-right: 10px;">{{ courseDetails.courseSummary.language}}</span>
+                <span style="padding-right: 10px;"><img src="../../../assets/img/closed_caption_24px.png"></span>
+                <span>{{ courseDetails.courseSummary.subtitle}}</span>
                 <span></span>
                 <span></span>
               </div>

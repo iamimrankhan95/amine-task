@@ -1,31 +1,37 @@
 <mat-accordion>
-  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+  <mat-expansion-panel class="mat-elevation-z0" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Feature Review
+        <span class="mat-panel-title">Feature Review</span>
       </mat-panel-title>
       <mat-panel-description>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <div class="row">
-      <div class="col-md-6" *ngFor="let featureReview of featureReviews">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="{{featureReview.image}}" alt="">
+    <div class="expansion-body-padding">
+
+      <div class="row">
+        <div class="col-md-6" *ngFor="let featureReview of featureReviews">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="{{featureReview.image}}" alt="">
+            </div>
+            <div class="col-md-8">
+              {{featureReview.name}}<br>
+              {{featureReview.profession}}<br>
+              {{featureReview.rate}}
+              <span style="padding-right: 5px;">
+                <span *ngFor="let item of [].constructor(featureReview.rate)"><img
+                    src="../../../../assets/img/star_purple500_24px.png" alt=""></span>
+                <span class="not-rated-star"
+                  *ngFor="let item of [].constructor(5-featureReview.rate)"><img
+                    src="../../../../assets/img/star_purple500_24px.png" alt=""></span>
+              </span>
+            </div>
           </div>
-          <div class="col-md-8">
-            {{featureReview.name}}<br>
-            {{featureReview.profession}}<br>
-            {{featureReview.rate}} &nbsp; <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            {{featureReview.review}}
+          <div class="row mt-4">
+            <div class="col-md-12">
+              {{featureReview.review}}
+            </div>
           </div>
         </div>
       </div>
