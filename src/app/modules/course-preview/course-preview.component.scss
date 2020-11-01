@@ -43,7 +43,7 @@
 }
 .course-info-div {
   color: #ebecee;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 }
 .course-prev {
   width: 400px;
@@ -56,6 +56,8 @@
 
 .containerrx {
   width: 70%;
+  margin: auto;
+  padding-top: 70px;
 }
 .course-author-div {
   font-size: 12px;
@@ -65,4 +67,23 @@
   /* White */
 
   color: #ffffff;
+}
+.breadcumbx {
+  // font-family: Avenir;
+  font-style: normal;
+  // font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+
+  /* Gray-1 */
+
+  color: #ebecee;
+  opacity: 0.7;
+}
+.breadcumbx-div {
+  // font-family: Avenir;
+padding-bottom: 20px;
 }
